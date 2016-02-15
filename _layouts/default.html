@@ -7,7 +7,19 @@
 </head>
 <body>
 
+<div class="toggleWrapper">
+  <a id="btnToggleGrid" class="btnToggleGrid" href="javascript:void(0)">Turn Grid On</a>
+</div>
+
+<article>
 {{ content }}
+</article>
+
+
+<script>
+	// Toggle Grid Functionality
+	document.getElementById("btnToggleGrid").onclick = toggleGrid;
+</script>
 
 </body>
 </html>
