@@ -1,7 +1,11 @@
 ###########
-# site.url, site.title
+# site.title, site.author.name
 
-title: 'Jekyll Gutenberg Theme'
+title:  Strange Case of Dr. Jekyll and Mr. Hyde
+author:
+  name: Robert Louis Stevenson
+
+
 
 ## note: 
 #  use site.path in your templates to make it work for both protocols e.g. http and https
@@ -13,12 +17,15 @@ url:  'http://henrythemes.github.io/jekyll-gutenberg-theme'
 ########
 # more settings
 
+collections:
+  chapters:
+      output: false
+
 markdown: kramdown
 
 sass:
   sass_dir: css
   style:    expanded
-
 
 
 exclude:

@@ -2,9 +2,28 @@
 layout: default 
 ---
 
-<h1>Heading 1</h1>
 
-<p>text text text text text
-   text text text text text
-   text text text text text</p>
+<!-- cover -->
 
+<p>World Classics Series</p>
+
+<h1>{{ site.title }}</h1>
+<h3>by {{ site.author.name }}</h3>
+
+
+<!-- table of contents -->
+
+<div class='toc'>
+
+Contents
+
+<ul>
+{% for chapter in site.chapters %}
+  <li>{{ chapter.title }}</li>
+{% endfor %}
+</ul>
+
+</div>
+
+
+<!-- chapters -->
